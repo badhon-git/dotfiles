@@ -64,9 +64,9 @@ set encoding=utf-8
 "let g:vimtex_compiler_method = 'latexmk'
 "let g:vimtex_compiler_bibtex = 'biber'
 
-let g:tex_flavor = 'latex'  " Ensure LaTeX, not plain TeX
-let g:vimtex_view_method = 'zathura'  " Use Zathura for PDFs
-let g:vimtex_compiler_method = 'latexmk'  " Use latexmk for compilation
+let g:tex_flavor = 'latex' 
+let g:vimtex_view_method = 'zathura'  " Used Zathura for PDFs
+let g:vimtex_compiler_method = 'latexmk'  " Used latexmk for compilation
 let g:vimtex_compiler_latexmk = {
   \ 'build_dir' : '.latexmk',
   \ 'options' : [
@@ -96,7 +96,7 @@ let g:vimtex_compiler_latexmk = {
     \ ],
     \}
 "let g:vimtex_compiler_latexmk = {
-  \ 'backend' : 'biber',  " Explicitly set backend to biber for BibLaTeX
+  \ 'backend' : 'biber',  " backend to biber for BibLaTeX
   \ 'build_dir' : '',
   \ 'continuous' : 1,
   \ 'executable' : 'latexmk',
