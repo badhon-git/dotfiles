@@ -1,0 +1,2 @@
+# Add via: sudo EDITOR=vim visudo
+badhon ALL=(ALL) NOPASSWD: /usr/bin/systemctl stop bluetooth, /usr/bin/systemctl start bluetooth, /usr/bin/rmmod btusb, /usr/bin/modprobe btusb, /usr/bin/rfkill unblock bluetooth
