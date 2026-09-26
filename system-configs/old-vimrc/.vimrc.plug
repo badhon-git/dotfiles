@@ -1,0 +1,6 @@
+call plug#begin()
+
+" plugins
+Plug 'tpope/vim-sensible'
+
+call plug#end()

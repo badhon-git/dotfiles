@@ -1,0 +1,47 @@
+# Rubya Akter Badhon
+
+[window]
+opacity = 1.0
+padding = { x = 10, y = 10 }
+decorations = "none"
+
+[font]
+size = 12.0
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Regular"
+
+[colors.primary]
+background = "#050e1f"
+foreground = "#e8e8e8"
+
+[colors.cursor]
+text = "#050e1f"
+cursor = "#e8e8e8"
+
+[colors.normal]
+black   = "#050e1f"
+red     = "#ff6b6b"
+green   = "#8fd14f"
+yellow  = "#e5c07b"
+blue    = "#61afef"
+magenta = "#c678dd"
+cyan    = "#56c2d6"
+white   = "#e8e8e8"
+
+[colors.bright]
+black   = "#26365a"
+red     = "#ff8787"
+green   = "#a3e065"
+yellow  = "#f5d78e"
+blue    = "#7cc0ff"
+magenta = "#d19aff"
+cyan    = "#7dd3e8"
+white   = "#ffffff"
+
+[cursor]
+style = { shape = "Block", blinking = "On" }
+
+[scrolling]
+history = 10000
