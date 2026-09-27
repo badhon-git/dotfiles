@@ -1,6 +1,7 @@
 call plug#begin()
 
-" plugins
 Plug 'tpope/vim-sensible'
+Plug 'lervag/vimtex'
+Plug 'dense-analysis/ale'
 
 call plug#end()
