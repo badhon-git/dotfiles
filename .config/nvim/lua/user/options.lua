@@ -15,3 +15,15 @@ o.signcolumn = "yes"
 o.scrolloff = 8
 o.swapfile = false
 vim.g.mapleader = " "
+local timer = vim.uv.new_timer()
+vim.api.nvim_create_autocmd({ "TextChanged", "TextChangedI" }, {
+  pattern = "*.tex",
+  callback = function(ev)
+    timer:stop()
+    timer:start(300, 0, vim.schedule_wrap(function()
+      if vim.api.nvim_buf_is_valid(ev.buf) and vim.bo[ev.buf].modified then
+        vim.api.nvim_buf_call(ev.buf, function() vim.cmd("silent! write") end)
+      end
+    end))
+  end,
+})
